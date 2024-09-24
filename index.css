@@ -1,0 +1,105 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: 'poppins', sans-serif;
+    background-color: #18181B;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.youtube-box{
+    max-width: 600px;
+    background-color: #18181B;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.3s ease , box-shadow 0.3s ease;
+
+}
+.youtube-box:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6);
+}
+.banner-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-wrapper::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, transperent 60%, rgba(0,0,0,0.7));
+}
+
+.youtube-box .banner{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.channel-info{
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+
+}
+
+.channel-icon{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+    border:3px solid #ff0000;
+}
+.channel-details{
+    color:#fff;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.channel-details h3{
+    margin: 0;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.channel-details p{
+    margin: 0.25rem;
+    font-size: 0.875rem;
+    color: #aaa;
+}
+.subscribe-btn{
+display: inline-flex;
+align-items: center;
+background-color: #ff0000;
+color: #fff;
+padding: 0.5rem 1rem;
+margin-left: 5px;
+border-radius: 20px;
+text-decoration: none;
+font-weight: 600;
+font-size: 0.875rem;
+transition: background-color 0.3s ease;
+
+}
+.subscribe-btn i{
+    margin-right: .5rem;
+    font-size: 1.25rem;
+
+}
+
+.subscribe-btn:hover{
+    background-color: #e60000;
+}
